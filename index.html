@@ -9,11 +9,60 @@
     <style>
         /* Custom CSS */
         :root {
-            --primary: #f63bbe;
+            --primary: #d96bb8;
             --secondary: #09682c;
             --dark: #1e293b;
             --light: #f8fafc;
         }
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #00bfff;
+            color: rgb(255, 255, 255);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header h2 {
+            margin: 0.5rem 0 0 0;
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+
+        .image-frame {
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1cap;
+    inline-size: auto;
+    height: 90vh; 
+    animation: zoomIn 10ms ease-out;
+    box-shadow: -10px -8px 0px rgb(167 243 208);
+}
+
+.image-frame img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid var(--primary);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
         body {
             background: linear-gradient(135deg, #00bfff 0%, #00bfff
@@ -180,11 +229,21 @@
     <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-0">
         <!-- Home Section -->
         <section id="home-section" class="section active">
+            <header style="text-align: center; background-color: #f63bbe; color: white; padding: 2rem;">
+                <h1 style="font-size: 3rem; font-weight: 900; margin-bottom: 0.5rem;">👩‍🎓My Path, My Portfolio🎓</h1>
+                <h2 style="font-size: 1.75rem; font-weight: bold; margin-top: 0;">Dream🔍. Learn♻️. Achieve🎯.</h2>
+            </header>
+            
             <div class="space-y-8">
                 <div class="bg-glass rounded-xl shadow-sm p-8 border border-gray-200/50 text-center">
+                    <div class="image-frame">
+                        <img src="mypic.png" alt="Styled Image">
+                    </div>
                     <div class="avatar w-32 h-32 rounded-full border-4 border-white shadow-lg mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
                         AM
                     </div>
+                   
+                    
                     <h1 class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent mb-2">
                         Mahalakshmi A
                     </h1>
@@ -213,7 +272,7 @@
                         <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
                             <i class="fas fa-user text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">About Me</h3>
+                        <h3 class="text-xl font-semibold mb-2">About Me🙋‍♀️</h3>
                         <p class="text-gray-600">Learn more about my background and skills</p>
                     </div>
 
@@ -221,7 +280,7 @@
                         <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
                             <i class="fas fa-code text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Projects</h3>
+                        <h3 class="text-xl font-semibold mb-2">Projects🌐</h3>
                         <p class="text-gray-600">View my recent work and projects</p>
                     </div>
 
@@ -229,7 +288,7 @@
                         <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
                             <i class="fas fa-envelope text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Contact</h3>
+                        <h3 class="text-xl font-semibold mb-2">Contact📲</h3>
                         <p class="text-gray-600">Get in touch with me</p>
                     </div>
                 </div>
